@@ -1,5 +1,4 @@
 # PAML
-<<<<<<< patch-1
 ## Introduction 
 A framework constructed in three levels for predicting the peptide and TCR binding recoginition.
 ## Requirements  
