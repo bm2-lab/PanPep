@@ -21,7 +21,8 @@ A framework constructed in three levels for predicting the peptide and TCR bindi
           --update_step_test INT: update steps for finetunning (default: 3)
           --C INT: Number of bases (default: 3)
           --R INT: Peptide Index matrix vector length (default: 3)
-          --L INT: Peptide embedding length (default: 75)
+          --L INT: Peptide embedding length (default: 75) 
+We provided three examples in different learning settings to show you how to use PAML to predict the peptide and TCR regconition. 
 ### Few-shot learning setting 
     python PAML.py --learning_setting few-shot --input ./Data/Example_few-shot.csv --output ./Output/Example_few-shot_output.csv
 ### Zero-shot learning setting 
