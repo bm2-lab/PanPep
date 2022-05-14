@@ -1,6 +1,8 @@
 # PAML
 ## Introduction 
 A framework constructed in three levels for predicting the peptide and TCR binding recoginition.
+![Figure1](https://user-images.githubusercontent.com/89248357/168423554-2a223c0e-169f-488a-9e22-39bed0f79088.png)
+
 ## Requirements  
 * python == 3.9.7  
 * pytorch == 1.10.2  
