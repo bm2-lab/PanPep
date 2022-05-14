@@ -9,6 +9,19 @@ A framework constructed in three levels for predicting the peptide and TCR bindi
 * scipy == 1.7.3  
 #### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://www.tensorflow.org/install/source). 
 ## Usage  
+
+    Usage: PAML.py [options]
+    Required:
+          --learning_setting STRING: choosing the learning setting: few-shot, zero-shot and majority
+          --input STRING: the path to the input data file (*.csv)
+          --output STRING: the path to the output data file (*.csv)
+
+    Optional:
+          --update_lr FLOAT: task-level inner update learning rate (default: 0.01)
+          --update_step_test INT: update steps for finetunning (default: 3)
+          --C INT: Number of bases (default: 3)
+          --R INT: Peptide Index matrix vector length (default: 3)
+          --L INT: Peptide embedding length (default: 75)
 ### Few-shot learning setting 
     python PAML.py --learning_setting few-shot --input ./Data/Example_few-shot.csv --output ./Output/Example_few-shot_output.csv
 ### Zero-shot learning setting 
