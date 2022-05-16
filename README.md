@@ -5,7 +5,7 @@ PAML is a framework constructed in three levels for predicting the peptide and T
 * No known TCRs for a peptide: zero-shot setting
 * A plenty of known TCRs for a peptide: majority setting 
  
-![Figure1](https://user-images.githubusercontent.com/89248357/168577982-53754e7a-5699-4a13-8b72-fee320a67937.png)
+![Figure 1](https://user-images.githubusercontent.com/89248357/168622684-9394745d-ba0a-4720-a725-9473d7e9d22a.png)
 
 ## Requirements  
 * python == 3.9.7  
