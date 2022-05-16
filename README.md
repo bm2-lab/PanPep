@@ -4,7 +4,7 @@ PAML is a framework constructed in three levels for predicting the peptide and T
 * Few known TCRs for a peptide: few-shot setting 
 * No known TCRs for a peptide: zero-shot setting
 * A plenty of known TCRs for a peptide: majority setting 
-* 
+ 
 ![Figure1](https://user-images.githubusercontent.com/89248357/168577982-53754e7a-5699-4a13-8b72-fee320a67937.png)
 
 ## Requirements  
@@ -56,6 +56,4 @@ In the Label column, there are three values: 1 indicating binding, 0 indicating 
 * output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the unknown pairs in the input file.
 ## Citation
 ## Contacts
-2011398@tongji.edu.cn  
-1810994@tongji.edu.cn  
-qiliu@tongji.edu.cn
+bm2-lab@tongji.edu.cn
