@@ -1,6 +1,10 @@
 # PAML
 ## Introduction 
-A framework constructed in three levels for predicting the peptide and TCR binding recoginition.
+PAML is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained basic meta learner and external memory and users can choose different settings based on their data type:  
+* Few known TCRs for a peptide: few-shot setting 
+* No known TCRs for a peptide: zero-shot setting
+* plenty of known TCRs for a peptide: majority setting 
+
 ![Figure1](https://user-images.githubusercontent.com/89248357/168423554-2a223c0e-169f-488a-9e22-39bed0f79088.png)
 
 ## Requirements  
@@ -24,16 +28,16 @@ A framework constructed in three levels for predicting the peptide and TCR bindi
           --C INT: Number of bases (default: 3)
           --R INT: Peptide Index matrix vector length (default: 3)
           --L INT: Peptide embedding length (default: 75) 
-We provided three examples in different learning settings to show you how to use PAML to predict the peptide and TCR regconition. 
-### Few-shot learning setting 
+We provided three examples in different learning settings to show you how to use PAML to predict the peptide and TCR recognition. 
+### Few-shot setting 
 Command:  
 
     python PAML.py --learning_setting few-shot --input ./Data/Example_few-shot.csv --output ./Output/Example_few-shot_output.csv 
     
 * input.csv: input csv file contains three columns: Peptide, CDR3 and Label, which represents the peptide sequence, TCR CDR3 squence and their binding specificiy.
-In the Label column, there are three values: 1 indicating binding, 0 indicating non-binding and Unknown. Then, known peptide-CDR3 pairs will be used to construct the TCR support set to fine-tune the basic meta learner and Unknown peptide-CDR3 pairs will be used to construct the TCR query set for being predicted.
-* output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the Unknown pairs in the input file.
-### Zero-shot learning setting 
+In the Label column, there are three values: 1 indicating binding, 0 indicating non-binding and unknown. Then, known peptide-CDR3 pairs will be used to construct the TCR support set to fine-tune the basic meta learner and unknown peptide-CDR3 pairs will be used to construct the TCR query set for being predicted.
+* output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the unknown pairs in the input file.
+### Zero-shot setting 
 Command:  
 
     python PAML.py --learning_setting zero-shot --input ./Data/Example_zero-shot.csv --output ./Output/Example_zero-shot_output.csv 
@@ -41,15 +45,15 @@ Command:
 * input.csv: input csv file contains two columns: Peptide and CDR3, which represents the peptide sequence, TCR CDR3 squence.
 * output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the pairs in the input file.
 
-### Majority learning setting 
+### Majority setting 
 Command: 
 
     python PAML.py --learning_setting majority --update_step_test 1000 --input ./Data/Example_majority.csv --output ./Output/Example_majority_output.csv 
 
 * update_step_test: 1000 represents the basic meta learner will be fine-tuned 1000 times for each peptide-level task and then be used to predict the binding score of TCRs in its TCR query set.
 * input.csv: input csv file contains three columns: Peptide, CDR3 and Label, which represents the peptide sequence, TCR CDR3 squence and their binding specificiy.
-In the Label column, there are three values: 1 indicating binding, 0 indicating non-binding and Unknown. Then, known peptide-CDR3 pairs will be used to construct the TCR support set to fine-tune the basic meta learner and Unknown peptide-CDR3 pairs will be used to construct the TCR query set for being predicted.
-* output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the Unknown pairs in the input file.
+In the Label column, there are three values: 1 indicating binding, 0 indicating non-binding and unknown. Then, known peptide-CDR3 pairs will be used to construct the TCR support set to fine-tune the basic meta learner and unknown peptide-CDR3 pairs will be used to construct the TCR query set for being predicted.
+* output.csv: out csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the unknown pairs in the input file.
 ## Citation
 ## Contacts
 2011398@tongji.edu.cn  
