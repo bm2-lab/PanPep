@@ -1,11 +1,11 @@
 # PAML
 ## Introduction 
-PAML is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained basic meta learner and external memory and users can choose different settings based on their data type:  
+PAML is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained basic meta learner and external memory and users can choose different settings based on their data available scenerio:  
 * Few known TCRs for a peptide: few-shot setting 
 * No known TCRs for a peptide: zero-shot setting
-* plenty of known TCRs for a peptide: majority setting 
-
-![Figure1](https://user-images.githubusercontent.com/89248357/168423554-2a223c0e-169f-488a-9e22-39bed0f79088.png)
+* A plenty of known TCRs for a peptide: majority setting 
+* 
+![Figure1](https://user-images.githubusercontent.com/89248357/168577982-53754e7a-5699-4a13-8b72-fee320a67937.png)
 
 ## Requirements  
 * python == 3.9.7  
