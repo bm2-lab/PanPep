@@ -13,7 +13,7 @@ PAML is a framework constructed in three levels for predicting the peptide and T
 * numpy == 1.21.2  
 * pandas == 1.4.1  
 * scipy == 1.7.3  
-#### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://www.tensorflow.org/install/source). 
+#### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://pytorch.org/get-a/locally/). 
 ## Usage  
 
     Usage: PAML.py [options]
