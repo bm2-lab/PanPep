@@ -5,7 +5,7 @@ PanPep is a framework constructed in three levels for predicting the peptide and
 * No known TCRs for a peptide: zero-shot setting
 * A plenty of known TCRs for a peptide: majority setting 
  
-![Figure 1](https://user-images.githubusercontent.com/89248357/168622684-9394745d-ba0a-4720-a725-9473d7e9d22a.png)
+![Figure 1](https://user-images.githubusercontent.com/89248357/185394001-acb797db-b8de-43a1-8d33-f770165921dd.png)
 
 ## Requirements  
 * python == 3.9.7  
