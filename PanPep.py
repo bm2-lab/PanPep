@@ -36,7 +36,6 @@ def aamapping(TCRSeq,encode_dim):
         try:
             TCRArray.append(aa_dict[aa_single])
         except KeyError:
-            print('Not proper aaSeqs: '+TCRSeq)
             TCRArray.append(np.zeros(5,dtype='float64'))
     for i in range(0,encode_dim-len(TCRSeq)):
         TCRArray.append(np.zeros(5,dtype='float64'))

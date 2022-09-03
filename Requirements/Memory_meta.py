@@ -34,7 +34,7 @@ class WriteHead(nn.Module):
         self.R = R
         self.L = L
         self.C = C
-        self.model_transform = nn.Linear(173,self.C)
+        self.model_transform = nn.Linear(208,self.C)
         nn.init.xavier_uniform_(self.model_transform.weight, gain=1.4)
         nn.init.normal_(self.model_transform.bias, std=0.01)
 
