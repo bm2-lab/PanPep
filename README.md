@@ -1,6 +1,6 @@
 # PanPep
 ## Introduction 
-PanPep is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained meta learner and external memory and users can choose different settings based on their data available scenerios:  
+PanPep is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained meta learner and external memory and users can choose different settings based on their data available scenarios:  
 * Few known TCRs for a peptide: few-shot setting 
 * No known TCRs for a peptide: zero-shot setting
 * A plenty of known TCRs for a peptide: majority setting 
