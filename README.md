@@ -1,5 +1,5 @@
 # PanPep
-[![DOI image](https://zenodo.org/badge/491401128.svg)](https://zenodo.org/record/7544242#.Y8aeynZBxHV)
+[![DOI image](https://zenodo.org/badge/DOI/10.5281/zenodo.7544387.svg)](https://zenodo.org/record/7544387#.Y8a7dXZBxHU)
 ## Introduction 
 PanPep is a framework constructed in three levels for predicting the peptide and TCR binding recognition. We have provided the trained meta learner and external memory and users can choose different settings based on their data available scenarios:  
 * Few known TCRs for a peptide: few-shot setting 
