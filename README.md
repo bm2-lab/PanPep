@@ -56,5 +56,6 @@ Command:
 In the Label column, there are three values: 1 indicating binding, 0 indicating non-binding and unknown. Then, known peptide-CDR3 pairs will be used to construct the TCR support set to fine-tune the basic meta learner and unknown peptide-CDR3 pairs will be used to construct the TCR query set for being predicted.
 * output.csv: out *.csv file contains three columns: Peptide, CDR3 and Score, which represents the peptide sequence, TCR CDR3 squence and their predicted binding score. All the peptide-CDR3 pairs are the unknown pairs in the input file.
 ## Citation
+Pan-Peptide Meta Learning for T-Cell Receptor-Antigen Binding Recognition, Nature Machine Intelligence, 2023.
 ## Contacts
 bm2-lab@tongji.edu.cn
