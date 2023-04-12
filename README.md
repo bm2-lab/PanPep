@@ -30,6 +30,7 @@ PanPep is a framework constructed in three levels for predicting the peptide and
           --R INT: Peptide Index matrix vector length (default: 3)
           --L INT: Peptide embedding length (default: 75) 
 We provided three examples in different learning settings to show you how to use PanPep to predict the peptide and TCR recognition. 
+#### * Note : you should sort the peptides in the input *csv, before predicting their binding probabilities.
 ### Few-shot setting 
 Command:  
 
