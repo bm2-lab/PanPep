@@ -13,7 +13,8 @@ PanPep is a framework constructed in three levels for predicting the peptide and
 * pytorch == 1.10.2  
 * numpy == 1.21.2  
 * pandas == 1.4.1  
-* scipy == 1.7.3  
+* scipy == 1.7.3
+* joblib, matplotlib, tensorboardx, scikit-learn also needed
 #### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://pytorch.org/). 
 ## Usage  
 
